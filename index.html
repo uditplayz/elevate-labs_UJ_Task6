@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Udit's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Udit ^o^</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>Welcome</h2>
+    <p>This portfolio is hosted on <strong>Azure App Service</strong> and pulls data from my PostgreSQL DB.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul id="projects-list"><li>Loading...</li></ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Udit | Hosted on Azure</p>
+  </footer>
+
+  <script>
+    fetch("/api/projects")
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById("projects-list");
+        list.innerHTML = "";
+        data.forEach(row => {
+          const li = document.createElement("li");
+          li.innerHTML = `<strong>${row.name}</strong> — ${row.domain} (Score: ${row.score})`;
+          list.appendChild(li);
+        });
+      })
+      .catch(() => {
+        document.getElementById("projects-list").innerHTML = "<li>Error loading projects</li>";
+      });
+  </script>
+</body>
+</html>

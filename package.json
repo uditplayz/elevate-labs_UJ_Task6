@@ -1,0 +1,16 @@
+{
+  "name": "udit-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site on Azure with SQL integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.16.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
