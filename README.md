@@ -1,9 +1,11 @@
 ## Screenshots
 - **Homepage (with live Azure URL visible)**  
-  ![alt text](live-site.png)
+  <img width="1920" height="1080" alt="live-site" src="https://github.com/user-attachments/assets/45dadf89-25be-458a-91b6-84b56e39a0d7" />
+
 
 - **Azure App Service Overview**  
-  ![alt text](deployed-1.png)
+  <img width="1920" height="1080" alt="deployed" src="https://github.com/user-attachments/assets/5e00f701-603a-4d9a-83a5-4c2d983e984a" />
+
 
 
 
