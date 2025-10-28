@@ -4,7 +4,8 @@
 
 
 - **Azure App Service Overview**  
-  <img width="1920" height="1080" alt="deployed" src="https://github.com/user-attachments/assets/5e00f701-603a-4d9a-83a5-4c2d983e984a" />
+  <img width="1920" height="1080" alt="deployed" src="https://github.com/user-attachments/assets/ef72551b-bf30-48fe-9df6-4d675b57e7c9" />
+
 
 
 
